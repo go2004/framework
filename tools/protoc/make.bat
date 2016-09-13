@@ -1,0 +1,1 @@
+protoc.exe --java_out=E:\framework\server\baseserver\src ..\..\protocol\MyMessage.proto

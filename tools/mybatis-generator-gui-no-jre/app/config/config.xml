@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+<GeneratorConfig>
+<Current>{"modelPackage":"db.model","connectorJarPath":"E:\\soft\\mybatis-generator-gui-no-jre\\app\\lib\\mysql-connector-java-5.1.38.jar","domainObjectName":"Account","offsetLimit":true,"daoTargetFolder":"","comment":false,"daoPackage":"db.dao","mappingXMLPackage":"db.mapping","mappingXMLTargetFolder":"","modelPackageTargetFolder":"","projectFolder":"E:\\tmp1","tableName":"account"}</Current>
+</GeneratorConfig>
+</configuration>

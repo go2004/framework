@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+<ab>
+<dbType>MYSQL</dbType>
+<host>127.0.0.1</host>
+<port>3306</port>
+<userName>root</userName>
+<password>123</password>
+<encoding>UTF-8</encoding>
+</ab>
+</configuration>

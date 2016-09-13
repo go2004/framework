@@ -1,0 +1,43 @@
+syntax = "proto3";
+package google.protobuf;
+	
+option java_package = "google.protobuf";  
+option java_outer_classname = "MyMessage";  
+
+//请求总接口
+message Req{
+	  enum Type { FOO = 0; BAR = 2; }
+	
+	repeated   Type type = 1;
+	repeated  Foo_Req foo = 2;		
+	repeated  Baz_Req baz = 3;
+}
+
+//回复总接口
+message Resp{
+	  enum Type { FOO = 0; BAR = 2; }
+	
+	repeated   Type type = 1;
+	repeated  Foo_Resp foo = 2;		
+	repeated  Baz_Resp baz = 3;
+}
+
+//请求
+message Foo_Req{  
+        int32 id = 1;          
+    } 
+message Foo_Resp{
+	 int32 id = 1; 
+	 string desc = 2;
+}
+
+//请求
+message Baz_Req{  
+        int32 id = 1;          
+    } 
+message Baz_Resp{
+	 int32 id = 1; 
+	 string desc = 2;
+}
+	 
+	
