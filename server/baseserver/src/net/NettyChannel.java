@@ -3,27 +3,28 @@ package net;
 /**
  * Created by Administrator on 2016/8/30.
  */
+import client.ClientInfo;
+import io.netty.channel.Channel;
+
 import java.util.Date;
 
 public class NettyChannel {
-    private String name;
+    private Channel channel;                //名字
+    private Date createDate;            //生成日期
+    private ClientInfo clientInfo;
 
-
-    private Date createDate;
-
-
-    public NettyChannel(String name, Date createDate) {
-        this.name = name;
+    public NettyChannel(Channel channel, Date createDate) {
+        this.channel = channel;
         this.createDate = createDate;
     }
 
-    public String getName() {
-        return name;
+    public Channel getchannel() {
+        return channel;
     }
 
 
-    public void setName(String name) {
-        this.name = name;
+    public void setChannel(Channel channel) {
+        this.channel = channel;
     }
 
 
@@ -34,4 +35,8 @@ public class NettyChannel {
     public void setCreateDate(Date createDate) {
         this.createDate = createDate;
     }
+
+    public void setClientInfo(ClientInfo Info){this.clientInfo = Info;}
+
+    public ClientInfo getClientInfo(){return this.clientInfo;}
 }
