@@ -46,6 +46,7 @@ public class NettyChannelPool {
         return null;
     }
 
+    //将获取的资源对象，返还给资源池
     public void freeObject(NettyChannel Object) {
         objectPool.returnObject(Object);
     }

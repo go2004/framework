@@ -2,20 +2,15 @@ package net;
 
 import common.NettyChannelPool;
 import google.protobuf.MyMessage;
-
 import handler.CmdDictionary;
 import handler.CmdHandler;
-import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
 import io.netty.util.AttributeKey;
-import io.netty.util.internal.SystemPropertyUtil;
-import queue.CommonQueue;
 
 import java.util.Date;
-import java.util.concurrent.ScheduledFuture;
 import java.util.logging.Logger;
 
 public class ReqServerHandler extends ChannelInboundHandlerAdapter {

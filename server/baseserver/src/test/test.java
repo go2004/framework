@@ -4,7 +4,6 @@ package test;
 import db.DBConn;
 import google.protobuf.MyMessage;
 import handler.CMDTestHandler;
-
 /**
  * Created by Administrator on 2016/9/23.
  */
@@ -146,6 +145,8 @@ public class test {
         System.out.println("----------3:"+user3.getUser());
 
         DBConn.getInstance().close();
+
+
     }
 }
 class Gen<T1,T2> {
